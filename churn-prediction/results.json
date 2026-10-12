@@ -1,0 +1,216 @@
+{
+  "simulated": true,
+  "n_customers": 7000,
+  "churn_rate": 0.263,
+  "split": {
+    "train": 4200,
+    "validation": 1400,
+    "test": 1400
+  },
+  "models": {
+    "Logistic regression": {
+      "test_auc": 0.751,
+      "test_pr_auc": 0.495
+    },
+    "Gradient boosting": {
+      "test_auc": 0.728,
+      "test_pr_auc": 0.472
+    }
+  },
+  "best_model": "Logistic regression",
+  "assumptions_ngn": {
+    "loss_per_churner": 45000,
+    "offer_cost": 6000,
+    "offer_save_rate": 0.4
+  },
+  "chosen_threshold": 0.575,
+  "test_cost_ngn_m": {
+    "do_nothing": 16.56,
+    "contact_everyone": 18.34,
+    "default_threshold_0.5": 15.6,
+    "chosen_threshold": 15.25
+  },
+  "saving_vs_do_nothing_pct": 7.9,
+  "saving_vs_default_pct": 2.2,
+  "at_chosen": {
+    "churners_caught": 233,
+    "churners_missed": 135,
+    "needless_offers": 248
+  },
+  "cost_curve": [
+    [
+      0.05,
+      18.306
+    ],
+    [
+      0.075,
+      18.18
+    ],
+    [
+      0.1,
+      18.036
+    ],
+    [
+      0.125,
+      17.898
+    ],
+    [
+      0.15,
+      17.736
+    ],
+    [
+      0.175,
+      17.52
+    ],
+    [
+      0.2,
+      17.346
+    ],
+    [
+      0.225,
+      17.124
+    ],
+    [
+      0.25,
+      16.86
+    ],
+    [
+      0.275,
+      16.59
+    ],
+    [
+      0.3,
+      16.506
+    ],
+    [
+      0.325,
+      16.356
+    ],
+    [
+      0.35,
+      16.296
+    ],
+    [
+      0.375,
+      16.08
+    ],
+    [
+      0.4,
+      15.96
+    ],
+    [
+      0.425,
+      15.81
+    ],
+    [
+      0.45,
+      15.756
+    ],
+    [
+      0.475,
+      15.69
+    ],
+    [
+      0.5,
+      15.6
+    ],
+    [
+      0.525,
+      15.474
+    ],
+    [
+      0.55,
+      15.372
+    ],
+    [
+      0.575,
+      15.252
+    ],
+    [
+      0.6,
+      15.294
+    ],
+    [
+      0.625,
+      15.282
+    ],
+    [
+      0.65,
+      15.42
+    ],
+    [
+      0.675,
+      15.624
+    ],
+    [
+      0.7,
+      15.708
+    ],
+    [
+      0.725,
+      15.876
+    ],
+    [
+      0.75,
+      16.08
+    ],
+    [
+      0.775,
+      16.212
+    ],
+    [
+      0.8,
+      16.302
+    ],
+    [
+      0.825,
+      16.416
+    ],
+    [
+      0.85,
+      16.452
+    ],
+    [
+      0.875,
+      16.536
+    ],
+    [
+      0.9,
+      16.554
+    ],
+    [
+      0.925,
+      16.548
+    ],
+    [
+      0.95,
+      16.56
+    ]
+  ],
+  "drivers_logistic": [
+    [
+      "contract_Two year",
+      -1.84
+    ],
+    [
+      "contract_One year",
+      -1.05
+    ],
+    [
+      "tenure_months",
+      -0.57
+    ],
+    [
+      "payment_Cash",
+      0.4
+    ],
+    [
+      "monthly_charge_ngn",
+      0.4
+    ],
+    [
+      "payment_Transfer",
+      0.38
+    ]
+  ]
+}
